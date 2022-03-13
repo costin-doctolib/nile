@@ -13,10 +13,26 @@ bin/rails routes
 bin/rails s -p 3001
 ```
 
-```bash```
-```bash```
-```bash```
-```bash```
+- generate a controller
+```bash
+bin/rails g controller BooksController index
+```
+
+- install `jq`
+```bash
+brew install jq
+```
+
+- make a verbose `curl` request
+```bash
+curl http://localhost:3001/books -v
+```
+
+- beautify the JSON response
+```bash
+curl http://localhost:3001/books | jq
+```
+
 ```bash```
 ```bash```
 ```bash```
