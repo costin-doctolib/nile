@@ -52,5 +52,10 @@ bin/rails c
 ```ruby
 Book.create!(author: 'Tom', title: 'Rails API')
 ```
-```bash```
+
+- do a `POST` request
+
+```bash
+curl --header "Content-Type: application/json" --request POST --data '{"author": "Dan Alexe", "title": "Dacopatia"}' http://localhost:3001/books -v
+```
 ```bash```
