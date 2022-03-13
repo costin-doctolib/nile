@@ -33,9 +33,24 @@ curl http://localhost:3001/books -v
 curl http://localhost:3001/books | jq
 ```
 
-```bash```
-```bash```
-```bash```
-```bash```
+- generate a model
+```bash
+rails g model Book title:string author:string
+```
+
+- run a migration
+```bash
+bin/rails db:migrate
+```
+
+- open the `rails` console
+```bash
+bin/rails c
+```
+
+- insert a row into the `books` table
+```ruby
+Book.create!(author: 'Tom', title: 'Rails API')
+```
 ```bash```
 ```bash```
