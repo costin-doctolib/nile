@@ -58,4 +58,11 @@ Book.create!(author: 'Tom', title: 'Rails API')
 ```bash
 curl --header "Content-Type: application/json" --request POST --data '{"author": "Dan Alexe", "title": "Dacopatia"}' http://localhost:3001/books -v
 ```
+
+- do a `DELETE` request
+```bash
+curl --header "Content-Type: application/json" --request DELETE http://localhost:3001/books/1 -v
+```
+```bash```
+```bash```
 ```bash```
