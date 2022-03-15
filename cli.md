@@ -63,6 +63,11 @@ curl --header "Content-Type: application/json" --request POST --data '{"author":
 ```bash
 curl --header "Content-Type: application/json" --request DELETE http://localhost:3001/books/1 -v
 ```
-```bash```
+
+- install the dependencies
+```bash
+bundle
+```
+
 ```bash```
 ```bash```
