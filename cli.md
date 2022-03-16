@@ -73,4 +73,9 @@ bundle
 ```bash
 rails generate rspec:install
 ```
+- run all the tests
+```bash
+rspec
+```
+
 ```bash```
