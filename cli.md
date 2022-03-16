@@ -69,5 +69,8 @@ curl --header "Content-Type: application/json" --request DELETE http://localhost
 bundle
 ```
 
-```bash```
+- generate boilerplate configuration files for `RSpec`
+```bash
+rails generate rspec:install
+```
 ```bash```
