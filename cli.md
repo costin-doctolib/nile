@@ -78,4 +78,9 @@ rails generate rspec:install
 rspec
 ```
 
+- run a specific test
+```bash
+bundle exec rspec spec/requests/books_spec.rb
+```
+
 ```bash```
