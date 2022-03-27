@@ -83,4 +83,37 @@ rspec
 bundle exec rspec spec/requests/books_spec.rb
 ```
 
-```bash```
+- generate a model
+```bash
+bin/rails g model Author first_name:string last_name:string age:integer
+```
+
+- run the migration
+```bash
+bin/rails db:migrate
+````
+
+- add an author id to the books DB table
+```bash
+bin/rails g migration add_author_to_books author:references
+```
+
+- remove the author from the books DB table
+```bash
+bin/rails g migration remove_author_from_books author:string
+```
+
+- run the migration
+```bash
+bin/rails db:migrate
+````
+
+- insert into DB from CLI
+```bash
+bin/rails c
+irb(main):006:0> author = Author.create!(first_name: 'JK', last_name: 'Rowling', age: 56)
+irb(main):006:0> book = Book.create!(title: 'The Philosophers Stone', author: author)
+irb(main):006:0> book2 = Book.create!(title: 'The Chamber of secrets', author: author)
+irb(main):006:0> author.books
+irb(main):006:0> book.author
+````
